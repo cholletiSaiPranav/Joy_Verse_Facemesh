@@ -1,0 +1,151 @@
+/*======================
+    404 page
+=======================*/
+.page_404 {
+  height: 100vh;
+  width: 100vw;
+  background: #fff;
+  font-family: 'Arvo', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.error-content {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error-title {
+  font-size: 120px;
+  color: #2d3748;
+  margin: 0 0 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+}
+
+.four_zero_four_bg {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  max-width: 800px;
+  height: 40vh;
+  max-height: 350px;
+}
+
+.contant_box_404 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contant_box_404 h3 {
+  font-size: 48px;
+  color: #4a5568;
+  margin-bottom: 20px;
+}
+
+.contant_box_404 p {
+  font-size: 20px;
+  color: #4a5568;
+  margin-bottom: 30px;
+}
+
+.link_404 {
+  color: #fff;
+  padding: 16px 30px;
+  background: linear-gradient(to right, #4c51bf, #6e8efb);
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  box-shadow: 0 8px 15px rgba(76, 81, 191, 0.2);
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.link_404:hover {
+  background: linear-gradient(to right, #434190, #5a67d8);
+  box-shadow: 0 12px 25px rgba(76, 81, 191, 0.3);
+  transform: scale(1.05);
+}
+
+.link_404:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: 0.5s;
+}
+
+.link_404:hover:before {
+  left: 100%;
+}
+
+@media (max-width: 768px) {
+  .error-title {
+    font-size: 80px;
+  }
+
+  .four_zero_four_bg {
+    height: 35vh;
+    max-height: 300px;
+  }
+
+  .contant_box_404 h3 {
+    font-size: 36px;
+  }
+
+  .contant_box_404 p {
+    font-size: 18px;
+  }
+
+  .link_404 {
+    padding: 14px 25px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .error-title {
+    font-size: 60px;
+  }
+
+  .four_zero_four_bg {
+    height: 30vh;
+    max-height: 250px;
+  }
+
+  .contant_box_404 h3 {
+    font-size: 28px;
+  }
+
+  .contant_box_404 p {
+    font-size: 16px;
+  }
+
+  .link_404 {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .page_404 {
+    padding: 10px;
+  }
+}
